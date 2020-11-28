@@ -1,0 +1,62 @@
+# -*- coding: utf-8, tab-width: 8 -*-
+
+127.0.0.1       localhost lh
+# 127.0.1.1     &$shortHost; &$shortHost;.lan
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# More special IPs
+224.0.0.251     mdns.multicast.ip
+
+
+
+
+#======================================================================#
+# Fritz!Box LAN
+#======================================================================#
+
+192.168.78.20       alice       alice.lan
+192.168.78.21       bob     bob.lan
+192.168.78.22       carol       carol.lan
+#                     ^- formerly cassie
+192.168.78.23       eve     eve.lan
+
+
+
+
+#======================================================================#
+# Critical Infrastructure
+#======================================================================#
+
+83.170.6.76         teredo-debian.remlab.net
+
+
+# Pin down some round-robin DNS hosts to simplify static routes:
+
+173.194.76.93       dl-ssl.google.com
+173.194.76.93       dl-ssl.l.google.com
+
+140.82.112.3        github.com
+140.82.112.35       ssh.github.com
+
+
+
+
+#======================================================================#
+# Privacy protections
+#======================================================================#
+
+127.0.6.66          apnpartners.com
+# http://www.gluster.org/2013/08/how-far-the-once-mighty-sourceforge-has-fallen/
+
+127.0.6.1           ntp.ubuntu.com
+
+
+
+
+# eof

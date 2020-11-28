@@ -1,0 +1,1 @@
+Error: ENOENT: no such file or directory, open '/…/node_modules/hosts-bakery-2020-pmb/docs/examples/[0-9]*.txt'

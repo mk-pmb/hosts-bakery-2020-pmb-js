@@ -1,0 +1,19 @@
+# -*- coding: utf-8, tab-width: 8 -*-
+
+127.0.0.1       localhost lh
+# 127.0.1.1     {{ ansible_hostname | default(inventory_hostname_short) }} {{ ansible_hostname | default(inventory_hostname_short) }}.lan
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# More special IPs
+224.0.0.251     mdns.multicast.ip
+
+
+
+
+# eof

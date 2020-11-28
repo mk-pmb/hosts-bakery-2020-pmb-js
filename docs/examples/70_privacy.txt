@@ -1,0 +1,12 @@
+# -*- coding: utf-8, tab-width: 8 -*-
+
+#======================================================================#
+# Privacy protections
+#======================================================================#
+
+{ "ipPrefix": "127.0.6." }
+
+66      apnpartners.com
+# http://www.gluster.org/2013/08/how-far-the-once-mighty-sourceforge-has-fallen/
+
+1       ntp.ubuntu.com

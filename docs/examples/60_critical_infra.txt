@@ -1,0 +1,16 @@
+# -*- coding: utf-8, tab-width: 4 -*-
+
+#======================================================================#
+# Critical Infrastructure
+#======================================================================#
+
+83.170.6.76     teredo-debian.remlab.net
+
+
+# Pin down some round-robin DNS hosts to simplify static routes:
+
+173.194.76.93   dl-ssl.google.com
+=               dl-ssl.l.google.com
+
+140.82.112.3    github.com
+140.82.112.35   ssh.github.com

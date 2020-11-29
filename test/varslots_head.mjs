@@ -1,12 +1,13 @@
 // -*- coding: utf-8, tab-width: 2 -*-
 
 import 'p-fatal';
+import angoo from 'ansible-goodies-201129-pmb';
 
 import bakeHosts from '..';
 
 bakeHosts({
   varSlots: {
-    shortHost: '{{ ansible_hostname | default(inventory_hostname_short) }}',
+    ...angoo.net.hostNames,
   },
   joinLines: '\n',
 }).then(console.log);

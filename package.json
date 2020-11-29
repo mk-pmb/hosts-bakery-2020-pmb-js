@@ -1,5 +1,5 @@
 { "name": "hosts-bakery-2020-pmb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate /etc/hosts lines from recipes, in the format used on PmB servers in 2020.",
   "keywords": [
     "hosts",
@@ -37,6 +37,7 @@
     "usnam-pmb": "^0.2.4"
   },
   "devDependencies": {
+    "ansible-goodies-201129-pmb": "^0.0.1",
     "nodemjs": "^0.1.8"
   },
 

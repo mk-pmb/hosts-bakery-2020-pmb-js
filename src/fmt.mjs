@@ -37,7 +37,7 @@ function tabulate(ind, row) {
 function renderHostNames(opt, origNames) {
   const names = origNames;
 
-  function addNames(f) {
+  function addNamesIfHomonymousOpt(f) {
     const a = opt[f.name];
     if (a === undefined) { return; }
     [].concat(f(a)).forEach(function maybeAdd(x) {
@@ -54,12 +54,12 @@ function renderHostNames(opt, origNames) {
 
   const [firstName] = origNames;
   if (!firstName.includes('.')) {
-    addNames(function firstHostNoDotSuffixes(a) {
+    addNamesIfHomonymousOpt(function firstHostNoDotSuffixes(a) {
       return a.map(suf => firstName + suf);
     });
   }
 
-  addNames(function addSuffixes(a) {
+  addNamesIfHomonymousOpt(function addSuffixes(a) {
     return a.map(suf => firstName + suf);
   });
 

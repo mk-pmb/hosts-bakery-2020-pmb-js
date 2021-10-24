@@ -1,5 +1,5 @@
 { "name": "hosts-bakery-2020-pmb",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Generate /etc/hosts lines from recipes, in the format used on PmB servers in 2020.",
   "keywords": [
     "hosts",

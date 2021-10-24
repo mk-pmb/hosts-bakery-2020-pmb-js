@@ -47,11 +47,6 @@ function renderHostNames(opt, origNames) {
     });
   }
 
-  addNames(function category(a) {
-    if (!a) { return; }
-    return origNames.map(h => `${h}.${a}.infra.hdtw`);
-  });
-
   const [firstName] = origNames;
   if (!firstName.includes('.')) {
     addNamesIfHomonymousOpt(function firstHostNoDotSuffixes(a) {
@@ -61,6 +56,21 @@ function renderHostNames(opt, origNames) {
 
   addNamesIfHomonymousOpt(function addSuffixes(a) {
     return a.map(suf => firstName + suf);
+  });
+
+  [].concat(opt.addTemplated).forEach(function renderTemplate(tpl) {
+    if (!tpl) { return; }
+    let invalid = false;
+    function insertSlot(slot, key) {
+      const val = opt[key];
+      if (val || (val === '')) { return val; }
+      invalid = true;
+    }
+    const preboiled = tpl.replace(/%<([\w\-]+)>/g, insertSlot);
+    if (invalid) { return; }
+    const parts = preboiled.split(/%/);
+    if (parts.length < 2) { return; }
+    names.push(parts.join(firstName));
   });
 
   return names.filter(Boolean);
